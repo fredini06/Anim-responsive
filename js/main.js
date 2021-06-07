@@ -3,18 +3,48 @@ jQuery(document).ready(function(){
     $('.slider').ripples({
         dropRadius: 13,
         perturbance: 0.01
+        });
+
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top>=60){
+            $('nav').addClass('secondary');
+        } else {
+            if($("nav").hasClass('secondary')) {
+            $('nav').removeClass('secondary');
+            }
+        }
       });
 
-      $(window).scroll(function(){
-          var top = $(window).scrollTop();
-          if(top>=60){
-              $('nav').addClass('secondary');
-          } else {
-              if($("nav").hasClass('secondary')) {
-                $('nav').removeClass('secondary');
-              }
+    $('.work').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+            enabled: true
           }
-      })
+      });
+
+      $("#team-members").owlCarousel(
+        {responsive : {
+                0:{
+                    items:1
+                },
+                480:{
+                    items:2
+                },
+                768:{
+                    items:3
+                }
+        }
+        }
+//        items:3,
+//        autoplay:true,
+//        smartSpeed:700,
+//        loop:true,
+//        autoplayHoverPause:true,
+            
+    );
+
 });
 
 //==============Texte défilant=================//
