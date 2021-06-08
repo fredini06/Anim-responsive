@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 2000px;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -205,9 +205,9 @@ body {
 
 /* TEAM */
 
-.teams .container {
+/* .teams .container {
     width: 1400px;
-}
+} */
 
 .team-member {
     margin: 0 25px;
@@ -252,4 +252,121 @@ h4.team-member-designation {
 
 .icon-gray {
     color: #64707b;
+}
+
+/* Temoignages */
+
+.carousel-inner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    padding: 10px;
+}
+
+.carousel-inner p {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.testimonials {
+    background: url(../img/reviews.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 155px;
+}
+
+.testimonials .carousel-indicators {
+    bottom: -60px;
+}
+
+.border-bottom {
+    background-color: #fff;
+    width: 60px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+.item h2 {
+    font-weight: 700;
+}
+
+/* FAQ */
+
+.faq {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.faq .sub-heading {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#accordian .panel {
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#accordian .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+#accordian .panel-title a {
+    display: block;
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: #1487FA;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a:after
+{
+    content: "\f068";
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #fff;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background: #1487FA;
+    font-size: 15px;
+    position: absolute;
+    top: 17px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+    
+}
+
+#accordian .panel-title a.collapsed:after
+{
+    content: "\f067";
+}
+
+#accordian .panel-body {
+    padding: 15px 25px;
+    background-color: #ebebeb;
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+}
+
+.panel-heading a {
+    text-decoration: none !important;
 }
