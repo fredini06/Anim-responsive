@@ -43,7 +43,7 @@ body {
 }
 
 .secondary {
-    background-color: #1487fa;
+    background-color: #5b5b5c;
 }
 
 /* SLIDER */
@@ -123,6 +123,16 @@ body {
     text-decoration: none;
     background-color: orangered;
     color: #fff;
+}
+
+@media (max-width: 414px) {
+    .btn1, .btn2 {
+      padding: 10px 20px;
+      border: none;
+      display: block;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 0;
+    }
 }
 
 .social-networks a.fa {
@@ -208,6 +218,10 @@ body {
 /* .teams .container {
     width: 1400px;
 } */
+
+.teams p {
+    font-size: 20px;
+}
 
 .team-member {
     margin: 0 25px;
@@ -369,4 +383,58 @@ h4.team-member-designation {
 
 .panel-heading a {
     text-decoration: none !important;
+}
+
+
+/* STATS */
+
+.stat {
+    background-image: url(../img/cover-bg-1.jpg);
+    background-position: center;
+    padding-top: 180px;padding-bottom: 200px;
+    color: #fff;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+
+.stat i {
+    font-size: 80px;
+}
+
+.stat-items h2 {
+    font-weight: bolder;
+    font-size: 42px;
+    color: orangered;
+}
+
+.stat-items p {
+    font-size: 20px;
+}
+
+/* footer */
+
+.footer {
+    float: left;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: -30px;
+    background: orangered;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.footer .fa {
+    color: #fff;
+    font-size: 26px;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.contact-item p {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 17px;
 }

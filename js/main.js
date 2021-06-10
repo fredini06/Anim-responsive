@@ -35,8 +35,7 @@ jQuery(document).ready(function(){
                 768:{
                     items:3
                 }
-        }
-        }
+        }}
 //        items:3,
 //        autoplay:true,
 //        smartSpeed:700,
@@ -44,6 +43,13 @@ jQuery(document).ready(function(){
 //        autoplayHoverPause:true,
             
     );
+
+    $('.counter').counterUp({
+        delay: 10,
+        time: 4000
+    });
+
+    $('a').smoothScroll();
 
 });
 
